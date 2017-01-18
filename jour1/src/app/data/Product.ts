@@ -9,10 +9,10 @@ export class Product implements IProduct{
 	//prix du produit
 	price: number
 
-	constructor(id:number, name:string, price:number){
-		this.id = 1;
-		this.name= "Thibaut";
-		this.price = "15;
+	constructor(id:string, name:string, price:number){
+		this.id = id;
+		this.name= name;
+		this.price = price;
 	}
 
 	//Multiple constructor not allowed
