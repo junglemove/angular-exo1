@@ -1,27 +1,19 @@
 import {Bankable} from './Bankable';
+import {Store} from './Store';
+import {IOrder} from './IOrder';
 export class Restaurant extends Bankable{
+	private oneStore:Store;
 
-	public canPay(value: number){
+	constructor(oneStore:Store){
+		super(1,1000);
+	}
 
-    }
-	//ajoute la valeur de amount au solde actuel
-	addMoney(amount: number){
+	public passOrder(order:IOrder){
 
-    }
-	//enleve la quantité amount du sold actuel
-	spendMoney(amount: number){
+	}
 
-    }
-	//retourne l'id
-	public get bankId(){
-        //return ;
-    }
-	//Ne permet pas le changement d'id
-	public set bankId(newNumber: number){
-
-    }
-	get total(){
-        //return ;
-    }
+	get total():number{
+		return 0;
+	}
 
 }
