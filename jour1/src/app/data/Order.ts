@@ -6,11 +6,15 @@ export class Order implements IOrder{
     product:IProduct[];
 
     getPrice(){
-        return this.product[0].price;
+        let sum = 0;
+        for(let i = 0; i<this.product.length;i++){
+            sum += this.product[i].price;
+        }
+        return sum;
     }
 
     onServed(isReady:boolean){
-        
+
     }
 
 }

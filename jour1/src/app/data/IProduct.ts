@@ -1,7 +1,7 @@
 
 export interface IProduct {
 	//identifiant unique du type de produit
-	id: string
+	id: number
 	//nom du produit
 	name: string
 	//prix du produit
